@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("nhap chieu dai");
+    let b=prompt("nhap chieu rong");
+    document.write("<table border='0'>");
+    for(let i=0;i<a;i++) {
+        document.write("<tr>");
+        for (let j = 0; j <b; j++) {
+            if (i === 0 || i == a-1) {
+                document.write("<td>");
+                document.write(" * ");
+                document.write("<td>");
+            } else if (j === 0 || j == b-1) {
+                document.write("<td>");
+                document.write(" * ");
+                document.write("<td>")
+            } else {
+                document.write("<td>");
+                document.write(" ");
+                document.write("<td>");
+            }
+        }
+        document.write("</tr>");
+    }
+
+    document.write("<table>");
+
+
+
+
+</script>
+</body>
+</html>
